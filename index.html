@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -17,41 +18,58 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-
-
 </head>
-<header>
-
-</header>
 
 <body>
-<button class="login-btn">Log In</button>
-<nav class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about-us.html">About Us</a></li>
-    <li><a href="campaign.html">Campaign</a></li>
-    <li><a href="dog-walking.html">Dog Walking</a></li>
-    <li><a href="fundraiser.html">Fundraiser</a></li>
-  </ul>
-</nav>
+  <header class="container-fluid">
+    <button class="btn btn-primary float-end login-btn">Log In</button>
+  </header>
 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="campaign.html">Campaign</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dog-walking.html">Dog Walking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fundraiser.html">Fundraiser</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Add your site or application content here -->
-  <div class="content">
-  <div class = "paw-container">
-    <img src="img/pawprint.png" alt="Pawprint">
-    <a href="about-us.html" class="paw-area top-left"></a>
-    <a href="dog-walking.html" class="paw-area top-right"></a>
-    <a href="fundraiser.html" class="paw-area bottom-left"></a>
-    <a href="blog.html" class="paw-area bottom-right"></a>
-    <a href="index.html" class="paw-area paw-pad"></a>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <div class="paw-container text-center">
+          <img src="img/pawprint.png" alt="Pawprint" class="img-fluid">
+          <a href="about-us.html" class="paw-area top-left d-block"></a>
+          <a href="dog-walking.html" class="paw-area top-right d-block"></a>
+          <a href="fundraiser.html" class="paw-area bottom-left d-block"></a>
+          <a href="blog.html" class="paw-area bottom-right d-block"></a>
+          <a href="index.html" class="paw-area paw-pad d-block"></a>
+        </div>
+      </div>
+    </div>
   </div>
 
-
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>
-
 </body>
 
 </html>
