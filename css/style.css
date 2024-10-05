@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.login-btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #555;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ddd;
+}
+
+.navbar ul li a.active {
+  color: #ff6347; /* Highlight the active page link */
+}
+
+.paw-container {
+  position: relative;
+  width: 400px; /* Adjust width based on your image */
+  margin: 0 auto;
+}
+
+/* Style for the pawprint image */
+.paw-container img {
+  width: 100%; /* Makes the image responsive */
+}
+
+/* Style for each clickable area overlay */
+.paw-area {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0); /* Transparent initially */
+  transition: background 0.3s ease;
+}
+
+/*for testing
+.paw-area:hover {
+  background: rgba(255, 0, 0, 0.3);
+}
+*/
+
+/* Define each area position and size */
+.top-left {
+  top: 190px;
+  left: 108px;
+  width: 80px;
+  height: 80px;
+}
+
+.top-right {
+  top: 190px;
+  left: 200px;
+  width: 80px;
+  height: 80px;
+}
+
+.bottom-left {
+  top: 275px;
+  left: 40px;
+  width: 80px;
+  height: 80px;
+}
+
+.bottom-right {
+  top: 250px;
+  left: 275px;
+  width: 80px;
+  height: 80px;
+}
+
+.paw-pad {
+  top: 310px;
+  left: 135px;
+  width: 140px;
+  height: 140px;
+}
